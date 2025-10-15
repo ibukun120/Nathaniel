@@ -14,7 +14,7 @@ export default function Navbar() {
     { name: "Profile", path: "/profile" },
     { name: "Albums", path: "/albums" },
     { name: "Videos", path: "/videos" },
-    { name: "Blug", path: "/blug" },
+    { name: "Blug", path: "/blog" },
     { name: "Best", path: "/best" },
   ];
 
@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-white text-gray-900 shadow-sm">
       <div className="flex justify-between items-center px-6 lg:px-32 py-4">
         {/* Logo */}
-        <div className="text-3xl font-bold">Nathaniel</div>
+        <div className="text-3xl font-bold">Bayo Adegbite</div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
