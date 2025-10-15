@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="space-y-4 md:w-1/2">
           <h1 className="text-2xl font-semibold">Bookings</h1>
           <p>Lagos, Nigeria</p>
-          <p>bookings@nathanielbassey.com</p>
+          <p>bookings@bayoadegbite.com</p>
         </div>
 
         {/* Reach Us Section */}
@@ -19,9 +19,9 @@ const Footer = () => {
           <h1 className="text-2xl font-semibold">Reach us Online</h1>
           <div className="space-y-2">
             <Link href="#" className="block hover:text-pink-500">
-              www.nathanielbassey.com
+              www.bayoadegbite.com
             </Link>
-            <p>info@nathanielbassey.com</p>
+            <p>info@bayodegbite.com</p>
           </div>
 
           <div className="flex gap-5 pt-2">
@@ -44,7 +44,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="bg-gray-800 flex flex-col sm:flex-row items-center justify-between px-6 sm:px-12 lg:px-24 py-6 text-center sm:text-left">
         <h1 className="text-gray-400 text-sm sm:text-base mb-4 sm:mb-0">
-          © 2025 Nathaniel Bassey. All rights reserved.
+          © 2025 Bayo Adegbite. All rights reserved.
         </h1>
 
         <ul className="flex gap-4 text-gray-500">
