@@ -1,5 +1,5 @@
-import SocialIconsRow1 from "@/components/SocialIconsRow";
-import Image from "next/image";
+// import SocialIconsRow1 from "@/components/SocialIconsRow";
+// import Image from "next/image";
 import React from "react";
 
 const page = () => {

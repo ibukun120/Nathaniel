@@ -1,7 +1,7 @@
 "use client";
 
 import AlbumLinks from "@/components/AlbumLinks";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 
 const page = () => {
