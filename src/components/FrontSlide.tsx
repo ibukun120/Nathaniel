@@ -5,13 +5,13 @@ import React from "react";
 const FrontSlide = () => {
   return (
     <section className="relative flex flex-col sm:flex-row items-center justify-between h-screen bg-[url('/images/front-img.png')] bg-cover bg-center text-white px-6 sm:px-10 lg:px-20">
-      {/* Left arrow (hidden on small screens) */}
+      {/* Left arrow */}
       <div className="hidden sm:block cursor-pointer">
         <ChevronLeft size={40} className="hover:text-gray-300 transition" />
       </div>
 
       {/* Center text + content */}
-      <div className="text-center sm:text-left max-w-lg sm:pl-10 lg:pl-20">
+      <div className="text-center sm:text-left max-w-lg sm:pl-10 lg:pl-20 h-full flex flex-col justify-center">
         <h1 className="uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight drop-shadow-md">
           Welcome
         </h1>
@@ -31,7 +31,7 @@ const FrontSlide = () => {
         </div>
       </div>
 
-      {/* Right arrow (hidden on small screens) */}
+      {/* Right arrow */}
       <div className="hidden sm:block cursor-pointer">
         <ChevronRight size={40} className="hover:text-gray-300 transition" />
       </div>

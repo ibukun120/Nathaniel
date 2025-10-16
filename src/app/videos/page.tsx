@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-18 bg-white">
       <div className="bg-[url('/images/vid.jpeg')] bg-cover bg-center h-48 md:h-screen w-full opacity-90 md:flex justify-between items-center px-4 md:px-32">
         <h1 className="text-5xl font-semibold text-black">VIDEOS</h1>
 

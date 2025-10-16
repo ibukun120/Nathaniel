@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="pt-20 text-black ">
+    <div className="pt-16 text-black ">
       <div className="bg-[url('/images/nath-album.jpg')] bg-center bg-cover bg-no-repeat w-full h-screen px-32 flex items-center">
         {/* <Image src="/images/nath-album.jpg" width={100} height={100} alt='nathaa'/> */}
         <h1 className="text-4xl font-semibold text-white">Albums</h1>
