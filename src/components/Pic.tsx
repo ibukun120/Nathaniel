@@ -3,15 +3,15 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-interface DataItem {
-  id: number;
-  imageUrl: string;
-  text: string;
-}
+// interface DataItem {
+//   id: number;
+//   imageUrl: string;
+//   text: string;
+// }
 
-interface Props {
-  list: DataItem[];
-}
+// interface Props {
+//   list: DataItem[];
+// }
 
 function Pic() {
   const list = [

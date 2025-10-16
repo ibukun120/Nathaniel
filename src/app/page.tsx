@@ -9,7 +9,7 @@ import Vid from "@/components/Vid";
 
 export default function Home() {
   return (
-    <div className="pt-14 text-white bg-white">
+    <div className="text-white bg-white">
       <FrontSlide/>
       <LatestAlbum/>
       <NextEvent/>
