@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${OpenSans.className} antialiased`}
+        className={`${OpenSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Nav/>
         {children}
