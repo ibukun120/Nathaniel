@@ -9,7 +9,7 @@ import Image from "next/image";
 const slides = [
   {
     type: "video",
-    src: "/videos/Ruger-Ft-Bnxn-POE-Video-(TrendyBeatz.com).mp4",
+    src: "/videos/WhatsAppVideo2024.mp4",
     title: "WELCOME",
     subtitle: "Get the latest update about my music and ministry",
   },
