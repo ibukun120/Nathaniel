@@ -8,16 +8,16 @@ interface GalleryImage {
 }
 
 const galleryData: GalleryImage[] = [
-  { id: 1, src: "/images/slides/img1.png", alt: "ema" },
-  { id: 2, src: "/images/slides/img2.png", alt: "st" },
-  { id: 3, src: "/images/slides/img3.png", alt: "TNOG-118" },
-  { id: 4, src: "/images/slides/img4.png", alt: "shegz" },
-  { id: 5, src: "/images/slides/img5.png", alt: "felix" },
-  { id: 6, src: "/images/slides/img6.png", alt: "PNW" },
-  { id: 7, src: "/images/slides/img7.png", alt: "PNN" },
-  { id: 8, src: "/images/slides/img8.png", alt: "nath" },
-  { id: 9, src: "/images/slides/img9.png", alt: "ev1" },
-  { id: 10, src: "/images/slides/img10.png", alt: "george" },
+  { id: 1, src: "/images/slides/img1.JPG", alt: "ema" },
+  { id: 2, src: "/images/slides/img2.JPG", alt: "st" },
+  { id: 3, src: "/images/slides/img3.JPG", alt: "TNOG-118" },
+  { id: 4, src: "/images/slides/img4.JPG", alt: "shegz" },
+  { id: 5, src: "/images/slides/img5.JPG", alt: "felix" },
+  { id: 6, src: "/images/slides/img6.JPG", alt: "PNW" },
+  { id: 7, src: "/images/slides/img7.JPG", alt: "PNN" },
+  { id: 8, src: "/images/slides/img8.JPG", alt: "nath" },
+  { id: 9, src: "/images/slides/img9.JPG", alt: "ev1" },
+  { id: 10, src: "/images/slides/img10.JPG", alt: "george" },
 ];
 
 export default function SlidePic() {
@@ -35,9 +35,9 @@ export default function SlidePic() {
                 height={300}
                 className="object-cover w-full h-full rounded-md transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-sm font-semibold transition-opacity duration-300 leading-3">
+              {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-sm font-semibold transition-opacity duration-300 leading-3">
                 {item.alt}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

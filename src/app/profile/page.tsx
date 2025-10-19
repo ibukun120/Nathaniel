@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-white md:bg-[url('/images/nath-profile.jpeg')] bg-center bg-cover bg-no-repeat">
+    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-[url('/images/8H8A0163.jpg')] bg-center bg-cover bg-no-repeat">
       {/* <Image
           src="/images/nath-profile.jpeg"
           alt="nath"
@@ -13,9 +13,9 @@ const page = () => {
           className="absolute object-cover"
         /> */}
 
-      <div className="hidden md:inline-block md:w-1/3 lg:w-1/2 px-2 py-32"></div>
+      
 
-      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-gray-800 text-sm px-2 md:px-8 py-40">
+      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-gray-300 text-sm px-2 md:px-8 py-40">
         <h1 className="text-4xl font-bold text-gray-950">PROFILE</h1>
         <p>
           Pastor Nathaniel Bassey is a Gospel Music Minister from Akwa Ibom
@@ -77,6 +77,8 @@ const page = () => {
           children.
         </p>
       </div>
+
+      <div className="hidden md:inline-block md:w-1/3 lg:w-1/2 px-2 py-32"></div>
     </div>
   );
 };

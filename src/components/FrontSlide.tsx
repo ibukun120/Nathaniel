@@ -15,8 +15,14 @@ const slides = [
   },
   {
     type: "image",
-    src: "/images/front-img.png",
+    src: "/images/8H8A0002-1.jpg",
     title: "MADE TO WORSHIP",
+    subtitle: "Join the sound of a generation hungry for God",
+  },
+  {
+    type: "image",
+    src: "/images/8H8A9909.jpg",
+    title: "LET`S WORSHIP TOGETHER",
     subtitle: "Join the sound of a generation hungry for God",
   },
 ];
@@ -40,7 +46,7 @@ const FrontSlide = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
 
   return (
-    <div className="relative w-full h-screen overflow-hidden text-white px-32">
+    <div className="relative w-full h-screen overflow-hidden text-white px-32 mt-16">
       <AnimatePresence mode="wait">
         {slides.map(
           (slide, index) =>

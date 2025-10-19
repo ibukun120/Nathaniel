@@ -18,7 +18,7 @@ const LatestAlbum = () => {
         <div className="w-full md:w-1/2 p-2 flex flex-col justify-between space-y-6 md:space-y-0">
           <div>
             <Image
-              src="/images/the-river.png"
+              src="/images/8H8A0026.jpg"
               alt="the-river"
               width={400}
               height={850}
