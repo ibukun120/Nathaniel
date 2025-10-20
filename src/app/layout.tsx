@@ -6,13 +6,11 @@ import Footer from "@/components/Footer";
 // import { Poppins } from "next/font/google";
 // import { Open_Sans } from "next/font/google";
 
-const OpenSans = Open_Sans
- ({
+const OpenSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800",], // choose what you need
+  weight: ["400", "500", "600", "700", "800"], // choose what you need
   variable: "--open-sans", // optional: for CSS variable use
 });
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +24,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Bayo Adegbite",
-  description: "Generated",
+  description: "Music Minister",
 };
 
 export default function RootLayout({
@@ -39,9 +37,9 @@ export default function RootLayout({
       <body
         className={`${OpenSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Nav/>
+        <Nav />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

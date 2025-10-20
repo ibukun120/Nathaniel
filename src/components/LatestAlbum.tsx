@@ -33,7 +33,7 @@ const LatestAlbum = () => {
           </div>
 
           <div>
-            <SocialIconsRow2/>
+            {/* <SocialIconsRow2/> */}
           </div>
         </div>
         <div className="w-1/2 p-2">

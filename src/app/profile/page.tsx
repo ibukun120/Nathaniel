@@ -15,7 +15,7 @@ const page = () => {
 
       
 
-      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-gray-300 text-sm px-2 md:px-8 py-40">
+      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-black">
         <h1 className="text-4xl font-bold text-gray-950">PROFILE</h1>
         <p>
           Pastor Nathaniel Bassey is a Gospel Music Minister from Akwa Ibom

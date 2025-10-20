@@ -25,16 +25,16 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-5 pt-2">
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="https://www.instagram.com/bayo_adegbite/" className="text-gray-300 hover:text-white">
               <Instagram />
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="https://x.com/BayoAdegbite_" className="text-gray-300 hover:text-white">
               <Twitter />
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="https://web.facebook.com/adegbite.bayo" className="text-gray-300 hover:text-white">
               <Facebook />
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="https://www.youtube.com/@bayo_adegbite_Tv/featured" className="text-gray-300 hover:text-white">
               <Youtube />
             </Link>
           </div>
@@ -49,22 +49,22 @@ const Footer = () => {
 
         <ul className="flex gap-4 text-gray-500">
           <li>
-            <Link href="#" className="hover:text-purple-400 transition">
+            <Link href="https://x.com/BayoAdegbite_" className="hover:text-purple-400 transition">
               <Twitter />
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-purple-400 transition">
+            <Link href="https://web.facebook.com/adegbite.bayo" className="hover:text-purple-400 transition">
               <Facebook />
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-purple-400 transition font-bold text-lg">
-              T
+            <Link href="https://www.instagram.com/bayo_adegbite/" className="hover:text-purple-400 transition font-bold text-lg">
+              <Instagram />
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-purple-400 transition">
+            <Link href="https://www.youtube.com/@bayo_adegbite_Tv/featured" className="hover:text-purple-400 transition">
               <Youtube />
             </Link>
           </li>
