@@ -3,11 +3,14 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="pt-18 bg-white">
-      <div className="bg-[url('/images/vid.jpeg')] bg-cover bg-center h-48 md:h-screen w-full opacity-90 md:flex justify-between items-center px-4 md:px-32">
-        <h1 className="text-5xl font-semibold text-black">VIDEOS</h1>
+    <div className="pt-16 bg-white">
+      {/* 8H8A0207.jpg
+      vid.jpeg 
+      8H8A0205.jpg*/}
+      <div className="bg-[url('/images/8H8A0205.jpg')] bg-cover bg-center h-screen w-full opacity-90 flex flex-col md:flex-row md:justify-between md:items-center pt-32 md:pt-0 gap-8 md:gap-0 px-4 md:px-32">
+        <h1 className="text-5xl font-semibold text-gray-300">VIDEOS</h1>
 
-        <div className="flex text-black opacity-100">
+        <div className="flex text-gray-100 opacity-100">
           <Link href="#">Bayo Adegbite</Link> / <Link href="#">Elements</Link> /{" "}
           <Link href="#">VIDEO</Link>
         </div>

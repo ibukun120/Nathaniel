@@ -80,7 +80,7 @@ const FrontSlide = () => {
                 <div className="absolute inset-0 bg-black/40" />
 
                 {/* Text Content */}
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 space-y-8 md:space-y-3">
                   <motion.h1
                     key={slide.title}
                     initial={{ y: 30, opacity: 0 }}
@@ -107,13 +107,13 @@ const FrontSlide = () => {
       {/* Left / Right Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 p-3 rounded-full transition"
+        className="absolute left-1 top-1/2 -translate-y-1/2 hover:bg-black/60 p-3 rounded-full cursor-pointer transition duration-300"
       >
         <ChevronLeft size={30} />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 p-3 rounded-full transition"
+        className="absolute right-1 top-1/2 -translate-y-1/2 hover:bg-black/60 p-3 rounded-full cursor-pointer transition duration-300"
       >
         <ChevronRight size={30} />
       </button>

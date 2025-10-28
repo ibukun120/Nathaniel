@@ -3,8 +3,10 @@
 import React from "react";
 
 const page = () => {
+  // 8H8A0057.jpg
+  // 8H8A0163.jpg
   return (
-    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-[url('/images/8H8A0163.jpg')] bg-center bg-cover bg-no-repeat">
+    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-[url('/images/8H8A0057.jpg')] bg-center bg-cover bg-no-repeat">
       {/* <Image
           src="/images/nath-profile.jpeg"
           alt="nath"
@@ -13,68 +15,43 @@ const page = () => {
           className="absolute object-cover"
         /> */}
 
-      
-
-      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-black">
-        <h1 className="text-4xl font-bold text-gray-950">PROFILE</h1>
+      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-gray-100">
+        <h1 className="text-4xl font-bold text-gray-100">PROFILE</h1>
         <p>
-          Pastor Nathaniel Bassey is a Gospel Music Minister from Akwa Ibom
-          State, Nigeria. He is a Recording Artiste, trumpet player,
-          singer/song-writer and a music producer. He serves as The Pastor of
-          THE OASIS- The Youth Church of RCCG, The King’s Court. Lagos, Nigeria.
-          Before accepting the call of God to full time music ministry, Pastor
-          Nath was band leader of the Steve Rhodes Jazz orchestra, a member of
-          the Spectrum 4 jazz quintet, and many other musical bands and
-          affiliations.
+          Bayo Adegbite is a passionate gospel music minister,
+          singer-songwriter, and recording artist from Oyo State, Nigeria. He
+          currently serves as the Head of the Music Department at World
+          Changers’ Assembly, a vibrant youth church under the Redeemed
+          Christian Church of God (RCCG). Leading his band, Sound From Heaven,
+          Bayo and his talented group of instrumentalists and singers rehearse
+          and minister together, delivering powerful worship across Nigeria in
+          response to invitations nationwide.
         </p>
         <p>
-          Minister Bassey believes that music is primarily, a fundamental tool
-          in the praise and worship of God and an avenue by which He (God)
-          relates with His people. He expresses his deep love for God through
-          his music and features in concerts, crusades, church events and other
-          kingdom gatherings and continues to lead many to the LORD.
+          Bayo believes music is a vital instrument of worship, enabling
+          believers to praise and magnify Jesus through the power of the Holy
+          Spirit while creating an atmosphere to receive from God. His ministry
+          carries a unique and prophetic sound, igniting revival and fostering a
+          deep longing for God’s presence.
         </p>
 
         <p>
-          Pastor Nath speaks at worship and music seminars within and outside
-          the shores of Nigeria. Inspiring the next generation of worship
-          leaders and gospel musicians has also been a major focus of his
-          ministry, regularly emphasizing the concept of a “TOTAL AND COMPLETE”
-          music minister with SPIRIT, SKILL, AND CHARACTER.
+          In 2015, Bayo released his debut single, “Aninilematannile”
+          (Inexhaustible God), which became a beloved worship song in churches
+          across Nigeria. Since then, he has released several tracks and is set
+          to launch his upcoming single, “Mekoddishkem”, on November 13, 2025.
+          Bayo is a firm advocate for holiness, viewing it as essential in for
+          fulfilling one’s destiny, advancing God’s kingdom and making heaven.
+          He embodies the concept of a complete music minister, emphasizing
+          spirit, skill, and character in his work.
         </p>
 
         <p>
-          His distinctly prophetic sound on the trumpet resonates far and wide,
-          stirring a revival and passion to holiness, godliness and heartfelt
-          worship in the body of Christ.
-        </p>
-
-        <p>
-          His debut album, ELOHIM, was recorded in 2008 in Capetown South
-          Africa. He has gone ahead to release other albums since then; THE SON
-          OF GOD(2014), THIS GOD IS TOO GOOD(2016), REVIVAL FLAMES (2017),
-          JESUS: THE RESURRECTION AND THE LIFE(2018), THE KING IS COMING (2019),
-          and HALLELUJAH AGAIN (2021) with Songs that have become church
-          anthems; transcending racial, cultural and ethnic lines and
-          boundaries.
-        </p>
-
-        <p>
-          His most recent project, a 15-Track album filled with Prophetic
-          Chants, High Praise, Adoration, Psalms, Hymns and Spiritual songs,
-          ‘THE NAMES OF GOD’ was recorded live in November 2021 and has become a
-          major tool of worship for Worshippers of Jesus across the globe.
-        </p>
-
-        <p>
-          n June 2017, he kicked off the “HALLELUJAH CHALLENGE”, an online
-          praise and prayer meeting which attracts thousands of participants
-          from around the world to date.
-        </p>
-
-        <p>
-          He is married and lives in Lagos, Nigeria, with his wife and their
-          children.
+          He also inspires his followers by sharing Bible passages on social
+          media, stirring faith and encouraging spiritual growth. Beyond music,
+          Bayo is a dedicated family man and entrepreneur. He resides in Lagos,
+          Nigeria, with his wife and daughter, where they jointly run a bag
+          business based in Ajao Estate, Lagos.
         </p>
       </div>
 

@@ -3,7 +3,7 @@ import React from "react";
 
 const NextEvent = () => {
   return (
-    <div className="relative inline-block h-72 mt-32mb-0 w-full text-white">
+    <div className="relative inline-block h-72 mt-2 md:mt-32 mb-0 w-full text-white">
       <Image 
       // halleluya-chalenge.jpg
         src="/images/8H8A0002.jpg"

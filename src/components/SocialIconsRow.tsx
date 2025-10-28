@@ -74,7 +74,7 @@ const SocialIconsRow1 = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-3 md:flex justify-evenly items-center bg-black space-x-0 w-full md:h-40">
+    <div className="grid grid-cols-3 md:flex justify-between items-center bg-black space-x-0 w-full md:h-40">
       {icons.map((icon) => (
         <div
           key={icon.id}

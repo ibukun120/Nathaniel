@@ -33,7 +33,7 @@ export default function SlidePic() {
                 alt={item.alt}
                 width={400}
                 height={300}
-                className="object-cover w-full h-full rounded-md transition-transform duration-300 group-hover:scale-105"
+                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
               />
               {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-sm font-semibold transition-opacity duration-300 leading-3">
                 {item.alt}
