@@ -5,8 +5,10 @@ import React from "react";
 const page = () => {
   // 8H8A0057.jpg
   // 8H8A0163.jpg
+  // profile.jpg
+  // 8H8A0057.jpg
   return (
-    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-[url('/images/8H8A0057.jpg')] bg-center bg-cover bg-no-repeat">
+    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-[url('/images/profile.jpg')] bg-center bg-cover bg-no-repeat relative">
       {/* <Image
           src="/images/nath-profile.jpeg"
           alt="nath"
@@ -14,9 +16,10 @@ const page = () => {
           height={100}
           className="absolute object-cover"
         /> */}
+          <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-gray-100">
-        <h1 className="text-4xl font-bold text-gray-100">PROFILE</h1>
+      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-white z-10">
+        <h1 className="text-4xl font-bold text-white">PROFILE</h1>
         <p>
           Bayo Adegbite is a passionate gospel music minister,
           singer-songwriter, and recording artist from Oyo State, Nigeria. He

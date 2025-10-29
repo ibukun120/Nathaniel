@@ -3,14 +3,15 @@ import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-// import { Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 // import { Open_Sans } from "next/font/google";
 
-const OpenSans = Open_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"], // choose what you need
-  variable: "--open-sans", // optional: for CSS variable use
+  weight: ["400", "600", "700"],
+  variable: "--font-poppins",
 });
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${OpenSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Nav />
         {children}

@@ -7,12 +7,12 @@ import React from "react";
 import Image from "next/image";
 
 const slides = [
-  {
-    type: "video",
-    src: "/videos/WhatsAppVideo2024.mp4",
-    title: "WELCOME",
-    subtitle: "Get the latest update about my music and ministry",
-  },
+  // {
+  //   type: "video",
+  //   src: "/videos/WhatsAppVideo2024.mp4",
+  //   title: "WELCOME",
+  //   subtitle: "Get the latest update about my music and ministry",
+  // },
   {
     type: "image",
     src: "/images/8H8A0002-1.jpg",

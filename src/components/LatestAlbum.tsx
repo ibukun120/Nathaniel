@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Pic from "./Pic";
-import SocialIconsRow2 from "./Social";
+// import Pic from "./Pic";
+// import SocialIconsRow2 from "./Social";
 
 const LatestAlbum = () => {
   return (
@@ -15,13 +15,15 @@ const LatestAlbum = () => {
 
       {/* second dv */}
       <div className="w-full flex flex-col md:flex-row mt-16 px-4 md:px-12">
-        <div className="w-full md:w-1/2 p-2 flex flex-col justify-between space-y-6 md:space-y-0">
+        <div className="w-full md:w-3/4 p-2 flex flex-col justify-between space-y-6 md:space-y-0">
           <div>
             <Image
-              src="/images/8H8A0026.jpg"
+              // src="/images/8H8A0026.jpg"
+              src="/images/BayoAdegbite.jpg"
               alt="the-river"
               width={400}
               height={850}
+              className="w-full"
             />
           </div>
 
@@ -37,7 +39,10 @@ const LatestAlbum = () => {
           </div>
         </div>
         <div className="w-1/2 p-2">
-          <Pic />
+        {/* <div className="w-full bg-fuchsia-300 p-2">
+          <Image alt="new-album" src="/images/BayoAdegbite.jpg" width={100} height={100} className="w-full h-full"/>
+        </div> */}
+          {/* <Pic /> */}
         </div>
       </div>
 

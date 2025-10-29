@@ -10,13 +10,13 @@ interface GalleryImage {
 const galleryData: GalleryImage[] = [
   { id: 1, src: "/images/slides/img1.jpg", alt: "ema" },
   { id: 2, src: "/images/slides/img2.jpg", alt: "st" },
-  { id: 3, src: "/images/slides/img3.jpg", alt: "TNOG-118" },
-  { id: 4, src: "/images/slides/img4.jpg", alt: "shegz" },
+  { id: 3, src: "/images/slides/img9.jpg", alt: "TNOG-118" },
+  { id: 4, src: "/images/slides/8H8A0066.jpg", alt: "shegz" },
   { id: 5, src: "/images/slides/img5.jpg", alt: "felix" },
   { id: 6, src: "/images/slides/img6.jpg", alt: "PNW" },
   { id: 7, src: "/images/slides/img7.jpg", alt: "PNN" },
-  { id: 8, src: "/images/slides/img8.jpg", alt: "nath" },
-  { id: 9, src: "/images/slides/img9.jpg", alt: "ev1" },
+  { id: 8, src: "/images/slides/band.jpg", alt: "nath" },
+  { id: 9, src: "/images/slides/8H8A9863.jpg", alt: "ev1" },
   { id: 10, src: "/images/slides/img10.jpg", alt: "george" },
 ];
 

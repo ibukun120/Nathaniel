@@ -17,7 +17,7 @@ const items = [
 
 export default function AlbumLinks() {
   const [visibleCount, setVisibleCount] = useState(6);
-
+ 
   const showMore = () => setVisibleCount(items.length);
 
   return (
