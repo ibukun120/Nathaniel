@@ -1,7 +1,7 @@
 // import Footer from "@/components/Footer";
 import FrontSlide from "@/components/FrontSlide";
 import LatestAlbum from "@/components/LatestAlbum";
-import NextEvent from "@/components/NextEvent";
+// import NextEvent from "@/components/NextEvent";
 import SlidePic from "@/components/SlidePic";
 import SocialIconsRow1 from "@/components/SocialIconsRow";
 import Vid from "@/components/Vid";
@@ -12,7 +12,7 @@ export default function Home() {
     <div className="text-white bg-white flex flex-col">
       <FrontSlide/>
       <LatestAlbum/>
-      <NextEvent/>
+      {/* <NextEvent/> */}
       <Vid/>
       <SlidePic/>
       <SocialIconsRow1/>
