@@ -14,7 +14,7 @@ const page = () => {
       </div>
 
       <div className="bg-white">
-        <AlbumLinks/>
+        {/* <AlbumLinks/> */}
       </div>
     </div>
   );
