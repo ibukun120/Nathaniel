@@ -165,7 +165,7 @@ const page = () => {
 
       {/* mobile view */}
       <div className="flex flex-col gap-12 md:hidden bg-white mb-12 w-full justify-center items-center">
-        <div className="w-full px-4">
+        <div className="w-full px-4 flex justify-center items-center">
           {" "}
           {/*fixed*/}
           <iframe
@@ -180,7 +180,7 @@ const page = () => {
           ></iframe>
         </div>
 
-        <div className="w-full px-4">
+        <div className="w-full px-4 flex justify-center items-center">
           {/*fixed*/}
           <iframe
             width="350"
@@ -194,7 +194,7 @@ const page = () => {
           ></iframe>
         </div>
 
-        <div className="w-full px-4">
+        <div className="w-full px-4 flex justify-center items-center">
           {/*fixed*/}
           <iframe
             width="350"
@@ -208,7 +208,7 @@ const page = () => {
           ></iframe>
         </div>
 
-        <div className="w-full px-4">
+        <div className="w-full px-4 flex justify-center items-center">
           {/*fixed*/}
           <iframe
             width="350"
