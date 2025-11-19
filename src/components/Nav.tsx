@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react"; // install: npm install lucide-react
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,17 +13,25 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Profile", path: "/profile" },
-    { name: "Albums", path: "/albums" },
+    { name: "Albums/Songs", path: "/albums" },
     { name: "Videos", path: "/videos" },
     // { name: "Blug", path: "/blog" },
     // { name: "Best", path: "/best" },
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white text-gray-900 shadow-sm">
-      <div className="flex justify-between items-center px-6 lg:px-32 py-4">
+    <nav className="fixed top-0 w-full z-50 bg-[#fafaf7] text-gray-900 shadow-sm">
+      <div className="flex justify-between items-center px-6 lg:px-32 py-1">
         {/* Logo */}
-        <div className="text-3xl font-bold">Bayo Adegbite</div>
+        <div className="">
+          <Image
+            src="/images/BayoAdegbite.png"
+            alt="BayoAdegbite.png"
+            width={150}
+            height={20}
+            className="h-16 w-32 md:w-44"
+          />
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
@@ -30,6 +39,7 @@ export default function Navbar() {
             <li key={link.path}>
               <Link
                 href={link.path}
+                // title={link.name}
                 className={`uppercase font-semibold transition ${
                   pathname === link.path
                     ? "text-pink-600"

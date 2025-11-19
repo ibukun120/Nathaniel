@@ -16,11 +16,11 @@ const page = () => {
           height={100}
           className="absolute object-cover"
         /> */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/70 md:bg-black/60"></div>
 
       <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-white z-10">
         <h1 className="text-4xl font-bold text-white">PROFILE</h1>
-        <p>
+        <p className="tracking-wider leading-6">
           Bayo Adegbite is a passionate gospel music minister,
           singer-songwriter, and recording artist from Oyo State, Nigeria. He
           currently serves as the Head of the Music Department at World
@@ -30,7 +30,7 @@ const page = () => {
           and minister together, delivering powerful worship across Nigeria in
           response to invitations nationwide.
         </p>
-        <p>
+        <p className="tracking-wider leading-6">
           Bayo believes music is a vital instrument of worship, enabling
           believers to praise and magnify Jesus through the power of the Holy
           Spirit while creating an atmosphere to receive from God. His ministry
@@ -38,7 +38,7 @@ const page = () => {
           deep longing for God’s presence.
         </p>
 
-        <p>
+        <p className="tracking-wider leading-6">
           In 2015, Bayo released his debut single, “Aninilematannile”
           (Inexhaustible God), which became a beloved worship song in churches
           across Nigeria. Since then, he has released several tracks and is set
@@ -49,7 +49,7 @@ const page = () => {
           spirit, skill, and character in his work.
         </p>
 
-        <p>
+        <p className="tracking-wider leading-6">
           He also inspires his followers by sharing Bible passages on social
           media, stirring faith and encouraging spiritual growth. Beyond music,
           Bayo is a dedicated family man and entrepreneur. He resides in Lagos,

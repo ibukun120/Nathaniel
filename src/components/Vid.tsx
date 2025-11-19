@@ -16,12 +16,11 @@ const Vid = () => {
           allowFullScreen
         ></iframe>
       </div> */}
-
       <div className="hidden md:block">
         <iframe
           width="760"
           height="415"
-          src="https://www.youtube.com/embed/AYmP15UZNPc?si=p1PVzuB-neeDbghI"
+          src="https://www.youtube.com/embed/k5345w3TzuI?si=yip8cs-GmJqxY1Aw"
           title="YouTube video player"
           className="border-0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -29,12 +28,12 @@ const Vid = () => {
           allowFullScreen
         ></iframe>
       </div>
-
       <div className="block md:hidden">
+        {" "}
         <iframe
           width="360"
           height="215"
-          src="https://www.youtube.com/embed/AYmP15UZNPc?si=p1PVzuB-neeDbghI"
+          src="https://www.youtube.com/embed/k5345w3TzuI?si=yip8cs-GmJqxY1Aw"
           title="YouTube video player"
           className="border-0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

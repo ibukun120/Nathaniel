@@ -4,7 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 // import { Poppins } from "next/font/google";
-import { Roboto_Slab } from "next/font/google";
+import { Roboto } from "next/font/google";
 // import { Open_Sans } from "next/font/google";
 
 // const poppins = Poppins({
@@ -13,7 +13,7 @@ import { Roboto_Slab } from "next/font/google";
 //   variable: "--font-poppins",
 // });
 
-const robotoSlab = Roboto_Slab({
+const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700", "800", "900"]
 })
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robotoSlab.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Nav />
         {children}

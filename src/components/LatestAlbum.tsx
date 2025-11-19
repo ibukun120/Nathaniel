@@ -27,12 +27,12 @@ const LatestAlbum = () => {
             />
           </div>
 
-          <div className="text-gray-400 pr-12">
+          {/* <div className="text-gray-400 pr-12">
             was taken in the Spirit to a church (which I believe was the throne
             room in my vision), and I heard this song being sung. It is a song
             from heaven. As you listen, you will experience the blessing of the
             throne of grace.
-          </div>
+          </div> */}
 
           <div>
             {/* <SocialIconsRow2/> */}

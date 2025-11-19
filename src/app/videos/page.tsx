@@ -4,13 +4,15 @@ import React from "react";
 const page = () => {
   return (
     <div className="pt-16 bg-white">
+      <div className="absolute inset-0 bg-black/50 min-h-screen top-16"></div>
       {/* 8H8A0207.jpg
       vid.jpeg 
       8H8A0205.jpg*/}
-      <div className="bg-[url('/images/8H8A0205.jpg')] bg-cover bg-center h-screen w-full opacity-90 flex flex-col md:flex-row md:justify-between md:items-center pt-32 md:pt-0 gap-8 md:gap-0 px-4 md:px-32">
-        <h1 className="text-5xl font-semibold text-gray-300">VIDEOS</h1>
+      <div className="bg-[url('/images/8H8A0205.jpg')] bg-cover bg-center h-screen w-full opacity-90 flex flex-col md:flex-row md:justify-between md:items-center pt-32 md:pt-0 gap-8 md:gap-0 px-4 md:px-32 ">
+      
+        <h1 className="text-5xl font-semibold text-white opacity-100">VIDEOS</h1>
 
-        <div className="flex text-gray-100 opacity-100">
+        <div className="flex text-white opacity-100">
           <Link href="#">Bayo Adegbite</Link> / <Link href="#">Elements</Link> /{" "}
           <Link href="#">VIDEO</Link>
         </div>
@@ -98,12 +100,12 @@ const page = () => {
       </div> */}
 
       {/* medium view */}
-      <div className="hidden md:block mb-12 bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20 px-20">
-          <div className="w-full px-4">
+      <div className="hidden md:block mb-12 bg-white w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 px-20">
+          <div className="w-full px-4 flex justify-center items-center">
             {/*fixed*/}
             <iframe
-              width="410"
+              width="450"
               height="300"
               src="https://www.youtube.com/embed/AylREEIagf8?si=FYeQ3mvyVsSxb95v"
               title="YouTube video player"
@@ -114,10 +116,10 @@ const page = () => {
             ></iframe>
           </div>
 
-          <div className="w-full px-4">
+          <div className="w-full px-4 flex justify-center items-center">
             {/*fixed*/}
             <iframe
-              width="410"
+              width="450"
               height="300"
               src="https://www.youtube.com/embed/k3AwYXDh1BE?si=u-eLqykuqXlHKMqy"
               title="YouTube video player"
@@ -128,10 +130,10 @@ const page = () => {
             ></iframe>
           </div>
 
-          <div className="w-full px-4">
+          <div className="w-full px-4 flex justify-center items-center">
             {/*fixed*/}
             <iframe
-              width="410"
+              width="450"
               height="300"
               src="https://www.youtube.com/embed/Hxnnr-jA9IY?si=97gLAo2dz0-O6-dp"
               title="YouTube video player"
@@ -142,10 +144,10 @@ const page = () => {
             ></iframe>
           </div>
 
-          <div className="w-full px-4">
+          <div className="w-full px-4 flex justify-center items-center">
             {/*fixed*/}
             <iframe
-              width="410"
+              width="450"
               height="300"
               src="https://www.youtube.com/embed/d3yBhTT0CuY?si=mmfBOyD8vtWfRCSW"
               title="YouTube video player"
