@@ -19,12 +19,11 @@ const page = () => {
 
       <div className="bg-white py-8">
         {/* <AlbumLinks/> */}
-
         <div className="flex justify-center items-center">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/Hxnnr-jA9IY?si=t-Fw-gGho2trjPtJ"
+            src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
             title="YouTube video player"
             className="border-0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -32,7 +31,6 @@ const page = () => {
             allowFullScreen
           ></iframe>
         </div>
-
         {/* <Link href='https://www.youtube.com/watch?v=Hxnnr-jA9IY&list=OLAK5uy_kw0MOrISKjL2hgEu8mMsPmsty9U0AxiTw' className="bg-gray-300 text-gray-600 py-2 px-6"> See More</Link> */}
       </div>
     </div>

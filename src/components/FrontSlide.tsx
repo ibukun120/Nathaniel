@@ -16,7 +16,7 @@ const slides = [
   {
     type: "image",
     src: "/images/8H8A0002-1.jpg",
-    title: "Sounds From Heaven",
+    title: "HEART OF WORSHIP",
     subtitle: "Worship in spirit and in truth",
   },
   {

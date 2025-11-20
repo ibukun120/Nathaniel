@@ -39,14 +39,7 @@ const page = () => {
         </p>
 
         <p className="tracking-wider leading-6">
-          In 2015, Bayo released his debut single, “Aninilematannile”
-          (Inexhaustible God), which became a beloved worship song in churches
-          across Nigeria. Since then, he has released several tracks and is set
-          to launch his upcoming single, “Mekoddishkem”, on November 13, 2025.
-          Bayo is a firm advocate for holiness, viewing it as essential in for
-          fulfilling one’s destiny, advancing God’s kingdom and making heaven.
-          He embodies the concept of a complete music minister, emphasizing
-          spirit, skill, and character in his work.
+          In 2015, Bayo released his debut single, “Aninilematannile” (Inexhaustible God), which became a beloved worship song in churches across Nigeria, since then, he has released other tracks. He recently released his latest single, “Mekoddishkem”, on November 13, 2025. Bayo is a firm advocate for holiness, viewing it as essential in for fulfilling one’s destiny, advancing God’s kingdom and making heaven. He embodies the concept of a complete music minister, emphasizing spirit, skill, and character in his work.
         </p>
 
         <p className="tracking-wider leading-6">
