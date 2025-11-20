@@ -18,7 +18,7 @@ const page = () => {
         /> */}
           <div className="absolute inset-0 bg-black/70 md:bg-black/60"></div>
 
-      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-sm px-2 md:px-8 py-40 text-white z-10">
+      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 md:gap-16 text-base px-2 md:px-8 py-40 text-white z-10">
         <h1 className="text-4xl font-bold text-white">PROFILE</h1>
         <p className="tracking-wider leading-6">
           Bayo Adegbite is a passionate gospel music minister,
