@@ -109,7 +109,7 @@ const page = () => {
       {/* medium view */}
       <div className="hidden md:block mb-12 bg-white w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-20">
-          <div className=" flex flex-col justify-center items-center gap-4">
+          <div className="">
             <div className="w-full aspect-video">
               <iframe
                 width="450"
@@ -123,12 +123,12 @@ const page = () => {
               ></iframe>
             </div>
 
-            <p className="text-xl text-center font-medium text-black">
+            <p className="text-xl text-center mt-4 font-medium text-black">
               MEKODDISHKEM
             </p>
           </div>
 
-          <div className=" flex flex-col justify-center items-center gap-4">
+          <div className="">
             {/*fixed*/}
             <div className="w-full aspect-video">
               <iframe
@@ -143,12 +143,12 @@ const page = () => {
               ></iframe>
             </div>
 
-            <p className="text-xl text-center font-medium text-black">
+            <p className="text-xl text-center mt-4 font-medium text-black">
               AKIRISORE{" "}
             </p>
           </div>
 
-          <div className=" flex flex-col justify-center items-center gap-4">
+          <div className="">
             {/*fixed*/}
             <div className="w-full aspect-video">
               <iframe
@@ -163,12 +163,12 @@ const page = () => {
               ></iframe>
             </div>
 
-            <p className="text-xl text-center font-medium text-black">
+            <p className="text-xl mt-4 text-center font-medium text-black">
               PROPHETIC HEALING WORSHIP
             </p>
           </div>
 
-          <div className=" flex flex-col justify-center items-center gap-4">
+          <div className="">
             {/*fixed*/}
             <div className="w-full aspect-video">
               <iframe
@@ -183,12 +183,12 @@ const page = () => {
               ></iframe>
             </div>
 
-            <p className="text-xl text-center font-medium text-black">
+            <p className="text-xl mt-4 text-center font-medium text-black">
               Alaaye (Live)
             </p>
           </div>
 
-          <div className=" flex flex-col justify-center items-center  gap-4">
+          <div className="">
             {/*fixed*/}
             <div className="w-full aspect-video">
               <iframe
@@ -203,7 +203,7 @@ const page = () => {
               ></iframe>
             </div>
 
-            <p className="text-xl text-center font-medium text-black">
+            <p className="text-xl mt-4 text-center font-medium text-black">
               GET READY! YESHUA
             </p>
           </div>
@@ -213,74 +213,99 @@ const page = () => {
 
       {/* mobile view */}
       <div className="flex flex-col gap-12 md:hidden bg-white mb-12 w-full justify-center items-center">
-        <div className="w-full px-4 flex justify-center items-center">
-          <iframe
-            width="350"
-            height="215"
-            src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
-            title="YouTube video player"
-            className="border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div className="w-full px-4">
+          <div>
+            <iframe
+              width="350"
+              height="215"
+              src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
+              title="YouTube video player"
+              className="border-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-xl text-center mt-4 font-medium text-black">
+            MEKODDISHKEM
+          </p>
         </div>
 
-        <div className="w-full px-4 flex justify-center items-center">
-          {" "}
-          {/*fixed*/}
-          <iframe
-            width="350"
-            height="215"
-            src="https://www.youtube.com/embed/AylREEIagf8?si=FYeQ3mvyVsSxb95v"
-            title="YouTube video player"
-            className="border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div>
+          <div className="w-full px-4">
+            {" "}
+            {/*fixed*/}
+            <iframe
+              width="350"
+              height="215"
+              src="https://www.youtube.com/embed/AylREEIagf8?si=FYeQ3mvyVsSxb95v"
+              title="YouTube video player"
+              className="border-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-xl text-center mt-4 font-medium text-black">
+            AKIRISORE{" "}
+          </p>
         </div>
 
-        <div className="w-full px-4 flex justify-center items-center">
-          {/*fixed*/}
-          <iframe
-            width="350"
-            height="215"
-            src="https://www.youtube.com/embed/k3AwYXDh1BE?si=u-eLqykuqXlHKMqy"
-            title="YouTube video player"
-            className="border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div>
+          <div className="w-full px-4">
+            {/*fixed*/}
+            <iframe
+              width="350"
+              height="215"
+              src="https://www.youtube.com/embed/k3AwYXDh1BE?si=u-eLqykuqXlHKMqy"
+              title="YouTube video player"
+              className="border-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-xl mt-4 text-center font-medium text-black">
+            PROPHETIC HEALING WORSHIP
+          </p>
         </div>
 
-        <div className="w-full px-4 flex justify-center items-center">
-          {/*fixed*/}
-          <iframe
-            width="350"
-            height="215"
-            src="https://www.youtube.com/embed/Hxnnr-jA9IY?si=97gLAo2dz0-O6-dp"
-            title="YouTube video player"
-            className="border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div>
+          <div className="w-full px-4 ">
+            {/*fixed*/}
+            <iframe
+              width="350"
+              height="215"
+              src="https://www.youtube.com/embed/Hxnnr-jA9IY?si=97gLAo2dz0-O6-dp"
+              title="YouTube video player"
+              className="border-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-xl mt-4 text-center font-medium text-black">
+            Alaaye (Live)
+          </p>
         </div>
 
-        <div className="w-full px-4 flex justify-center items-center">
-          {/*fixed*/}
-          <iframe
-            width="350"
-            height="215"
-            src="https://www.youtube.com/embed/d3yBhTT0CuY?si=mmfBOyD8vtWfRCSW"
-            title="YouTube video player"
-            className="border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div>
+          <div className="w-full px-4">
+            {/*fixed*/}
+            <iframe
+              width="350"
+              height="215"
+              src="https://www.youtube.com/embed/d3yBhTT0CuY?si=mmfBOyD8vtWfRCSW"
+              title="YouTube video player"
+              className="border-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-xl mt-4 text-center font-medium text-black">
+            GET READY! YESHUA
+          </p>
         </div>
       </div>
 

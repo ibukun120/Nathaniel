@@ -8,7 +8,7 @@ const page = () => {
   // profile.jpg
   // 8H8A0057.jpg
   return (
-    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-6 md:px-12 bg-[url('/images/profile.jpg')] bg-center bg-cover bg-no-repeat relative">
+    <div className="pt-4 md:pt-20 flex flex-row justify-center items-center px-4 md:px-12 bg-[url('/images/profile.jpg')] bg-center bg-cover bg-no-repeat relative">
       {/* <Image
           src="/images/nath-profile.jpeg"
           alt="nath"

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="space-y-4 md:w-1/2">
           <h1 className="text-2xl font-semibold">Bookings</h1>
           <p>Lagos, Nigeria</p>
-          <p>bookings@bayoadegbite.com</p>
+          <p>Bookings: bayoadegbitemain@gmail.com </p>
         </div>
 
         {/* Reach Us Section */}
@@ -21,7 +21,7 @@ const Footer = () => {
             <Link href="#" className="block hover:text-pink-500">
               www.bayoadegbite.com
             </Link>
-            <p>info@bayodegbite.com</p>
+            <p>info@bayoadegbiteministries@gmail.com</p>
           </div>
 
           <div className="flex gap-5 pt-2">

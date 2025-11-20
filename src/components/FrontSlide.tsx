@@ -16,14 +16,14 @@ const slides = [
   {
     type: "image",
     src: "/images/8H8A0002-1.jpg",
-    title: "MADE TO WORSHIP",
-    subtitle: "Join the sound of a generation hungry for God",
+    title: "Sounds From Heaven",
+    subtitle: "Worship in spirit and in truth",
   },
   {
     type: "image",
     src: "/images/8H8A9909.jpg",
-    title: "LET`S WORSHIP TOGETHER",
-    subtitle: "Join the sound of a generation hungry for God",
+    title: "Sounds From Heaven",
+    subtitle: "Worship in spirit and in truth",
   },
 ];
 
@@ -86,7 +86,7 @@ const FrontSlide = () => {
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className="text-5xl md:text-7xl font-bold tracking-wide"
+                    className="text-5xl md:text-7xl font-bold tracking-wide uppercase"
                   >
                     {slide.title}
                   </motion.h1>

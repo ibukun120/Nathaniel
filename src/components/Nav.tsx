@@ -20,16 +20,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#fafaf7] text-gray-900 shadow-sm">
+    <nav className="fixed top-0 w-full z-50 bg-white text-gray-900 shadow-sm">
       <div className="flex justify-between items-center px-6 lg:px-32 py-1">
         {/* Logo */}
         <div className="">
           <Image
-            src="/images/BayoAdegbite.png"
+            src="/images/bayowhite.jpg"
             alt="BayoAdegbite.png"
             width={150}
             height={20}
-            className="h-16 w-32 md:w-44"
+            className="h-16 w-32 md:w-40"
           />
         </div>
 
