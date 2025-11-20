@@ -32,8 +32,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Bayo Adegbite",
   description: "Music Minister",
+  icons: {
+    icon: "/fav.jpg",                   
+    apple: "/fav.jpg",                  
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

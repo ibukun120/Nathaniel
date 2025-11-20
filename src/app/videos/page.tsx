@@ -9,8 +9,9 @@ const page = () => {
       vid.jpeg 
       8H8A0205.jpg*/}
       <div className="bg-[url('/images/8H8A0205.jpg')] bg-cover bg-center h-screen w-full opacity-90 flex flex-col md:flex-row md:justify-between md:items-center pt-32 md:pt-0 gap-8 md:gap-0 px-4 md:px-32 ">
-      
-        <h1 className="text-5xl font-semibold text-white opacity-100">VIDEOS</h1>
+        <h1 className="text-5xl font-semibold text-white opacity-100">
+          VIDEOS
+        </h1>
 
         <div className="flex text-white opacity-100">
           <Link href="#">Bayo Adegbite</Link> / <Link href="#">Elements</Link> /{" "}
@@ -19,17 +20,23 @@ const page = () => {
       </div>
       {/* vid.jpeg */}
 
-      <div className=" py-20 w-full flex justify-center items-center ">
-        <iframe
-          width="470"
-          height="412"
-          src="https://www.youtube.com/embed/wdSMGH_6nfE?si=S40dFxwv09SIu4Pk"
-          title="YouTube video player"
-          className="border-0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+      <div className=" py-20 flex-col flex justify-center items-center gap-4">
+        <div className="aspect-video flex justify-center items-center w-[700px]">
+          <iframe
+            width="470"
+            height="412"
+            src="https://www.youtube.com/embed/wdSMGH_6nfE?si=S40dFxwv09SIu4Pk"
+            title="YouTube video player"
+            className="border-0 w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <p className="text-xl text-center font-medium text-black">
+          ANINILEMATANNILE Live
+        </p>
       </div>
 
       {/* large view */}
@@ -101,70 +108,124 @@ const page = () => {
 
       {/* medium view */}
       <div className="hidden md:block mb-12 bg-white w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 px-20">
-          <div className="w-full px-4 flex justify-center items-center">
-            {/*fixed*/}
-            <iframe
-              width="450"
-              height="300"
-              src="https://www.youtube.com/embed/AylREEIagf8?si=FYeQ3mvyVsSxb95v"
-              title="YouTube video player"
-              className="border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-20">
+          <div className=" flex flex-col justify-center items-center gap-4">
+            <div className="w-full aspect-video">
+              <iframe
+                width="450"
+                height="300"
+                src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
+                title="YouTube video player"
+                className="border-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <p className="text-xl text-center font-medium text-black">
+              MEKODDISHKEM
+            </p>
           </div>
 
-          <div className="w-full px-4 flex justify-center items-center">
+          <div className=" flex flex-col justify-center items-center gap-4">
             {/*fixed*/}
-            <iframe
-              width="450"
-              height="300"
-              src="https://www.youtube.com/embed/k3AwYXDh1BE?si=u-eLqykuqXlHKMqy"
-              title="YouTube video player"
-              className="border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+            <div className="w-full aspect-video">
+              <iframe
+                width="450"
+                height="300"
+                src="https://www.youtube.com/embed/AylREEIagf8?si=FYeQ3mvyVsSxb95v"
+                title="YouTube video player"
+                className="border-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <p className="text-xl text-center font-medium text-black">
+              AKIRISORE{" "}
+            </p>
           </div>
 
-          <div className="w-full px-4 flex justify-center items-center">
+          <div className=" flex flex-col justify-center items-center gap-4">
             {/*fixed*/}
-            <iframe
-              width="450"
-              height="300"
-              src="https://www.youtube.com/embed/Hxnnr-jA9IY?si=97gLAo2dz0-O6-dp"
-              title="YouTube video player"
-              className="border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+            <div className="w-full aspect-video">
+              <iframe
+                width="450"
+                height="300"
+                src="https://www.youtube.com/embed/k3AwYXDh1BE?si=u-eLqykuqXlHKMqy"
+                title="YouTube video player"
+                className="border-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <p className="text-xl text-center font-medium text-black">
+              PROPHETIC HEALING WORSHIP
+            </p>
           </div>
 
-          <div className="w-full px-4 flex justify-center items-center">
+          <div className=" flex flex-col justify-center items-center gap-4">
             {/*fixed*/}
-            <iframe
-              width="450"
-              height="300"
-              src="https://www.youtube.com/embed/d3yBhTT0CuY?si=mmfBOyD8vtWfRCSW"
-              title="YouTube video player"
-              className="border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+            <div className="w-full aspect-video">
+              <iframe
+                width="450"
+                height="300"
+                src="https://www.youtube.com/embed/Hxnnr-jA9IY?si=97gLAo2dz0-O6-dp"
+                title="YouTube video player"
+                className="border-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <p className="text-xl text-center font-medium text-black">
+              Alaaye (Live)
+            </p>
+          </div>
+
+          <div className=" flex flex-col justify-center items-center  gap-4">
+            {/*fixed*/}
+            <div className="w-full aspect-video">
+              <iframe
+                width="450"
+                height="300"
+                src="https://www.youtube.com/embed/d3yBhTT0CuY?si=mmfBOyD8vtWfRCSW"
+                title="YouTube video player"
+                className="border-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <p className="text-xl text-center font-medium text-black">
+              GET READY! YESHUA
+            </p>
           </div>
         </div>
-
-        
       </div>
       {/* medium view */}
 
       {/* mobile view */}
       <div className="flex flex-col gap-12 md:hidden bg-white mb-12 w-full justify-center items-center">
+        <div className="w-full px-4 flex justify-center items-center">
+          <iframe
+            width="350"
+            height="215"
+            src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
+            title="YouTube video player"
+            className="border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         <div className="w-full px-4 flex justify-center items-center">
           {" "}
           {/*fixed*/}
@@ -223,16 +284,15 @@ const page = () => {
         </div>
       </div>
 
-
       <div className="flex items-center justify-center py-6">
-          <Link
-            href="https://www.youtube.com/@bayo_adegbite_Tv/videos"
-            target="_blank"
-            className="px-8 py-4 rounded-lg bg-orange-500 hover:bg-orange-400"
-          >
-            Show More
-          </Link>
-        </div>
+        <Link
+          href="https://www.youtube.com/@bayo_adegbite_Tv/videos"
+          target="_blank"
+          className="px-8 py-4 rounded-lg bg-orange-500 hover:bg-orange-400"
+        >
+          Show More
+        </Link>
+      </div>
     </div>
   );
 };
