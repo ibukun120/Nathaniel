@@ -21,7 +21,7 @@ const page = () => {
       {/* vid.jpeg */}
 
       <div className=" py-20 flex-col flex justify-center items-center gap-4">
-        <div className="aspect-video flex justify-center items-center w-[700px]">
+        <div className="aspect-video flex justify-center items-center w-full md:w-[700px]">
           <iframe
             width="470"
             height="412"
