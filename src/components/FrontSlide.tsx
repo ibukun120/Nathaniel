@@ -67,7 +67,7 @@ const FrontSlide = () => {
                     muted
                     playsInline
                     loop
-                    preload="auto"
+                    // preload="auto"
                     className="object-cover w-full h-full"
                   />
                 ) : (
