@@ -61,10 +61,13 @@ const FrontSlide = () => {
               >
                 {slide.type === "video" ? (
                   <video
+                    key={index}
                     src={slide.src}
                     autoPlay
                     muted
+                    playsInline
                     loop
+                    preload="auto"
                     className="object-cover w-full h-full"
                   />
                 ) : (
