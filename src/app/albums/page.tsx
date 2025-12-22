@@ -1,8 +1,8 @@
 "use client";
 
-import AlbumLinks from "@/components/AlbumLinks";
+// import AlbumLinks from "@/components/AlbumLinks";
 import YouTubeGrid from "@/components/Maping";
-import Link from "next/link";
+// import Link from "next/link";
 // import Image from "next/image";
 import React from "react";
 
