@@ -32,10 +32,25 @@ const page = () => {
             allowFullScreen
           ></iframe>
         </div>
-        
 
         <div>
-          <YouTubeGrid/>
+          <YouTubeGrid />
+        </div>
+
+        <div>
+          
+          <div>
+            <iframe
+              data-testid="embed-iframe"
+              className="rounded-lg"
+              src="https://open.spotify.com/embed/track/1KknqXooD1WQDCij5tyw0u"
+              width="100%"
+              height="352"
+              style={{ border: 0 }}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </div>
