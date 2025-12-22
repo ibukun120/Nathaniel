@@ -26,19 +26,14 @@ const page = () => {
             height="315"
             src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
             title="YouTube video player"
-            className="border-0 w-full md:w-1/2"
+            className="border-0 w-full md:w-2/3"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
 
-        <div>
-          <YouTubeGrid />
-        </div>
-
-        <div>
-          
+        <div className="mt-4">
           <div>
             <iframe
               data-testid="embed-iframe"
@@ -52,6 +47,12 @@ const page = () => {
             />
           </div>
         </div>
+
+        <div>
+          <YouTubeGrid />
+        </div>
+
+        
       </div>
     </div>
   );
