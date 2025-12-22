@@ -1,6 +1,7 @@
 "use client";
 
 import AlbumLinks from "@/components/AlbumLinks";
+import YouTubeGrid from "@/components/Maping";
 import Link from "next/link";
 // import Image from "next/image";
 import React from "react";
@@ -17,7 +18,7 @@ const page = () => {
         </h1>
       </div>
 
-      <div className="bg-white py-8">
+      <div className="bg-white py-4 px-2">
         {/* <AlbumLinks/> */}
         <div className="flex justify-center items-center">
           <iframe
@@ -25,13 +26,17 @@ const page = () => {
             height="315"
             src="https://www.youtube.com/embed/k5345w3TzuI?si=RmOHVjOsfSj1EO4W"
             title="YouTube video player"
-            className="border-0"
+            className="border-0 w-full md:w-1/2"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
-        {/* <Link href='https://www.youtube.com/watch?v=Hxnnr-jA9IY&list=OLAK5uy_kw0MOrISKjL2hgEu8mMsPmsty9U0AxiTw' className="bg-gray-300 text-gray-600 py-2 px-6"> See More</Link> */}
+        
+
+        <div>
+          <YouTubeGrid/>
+        </div>
       </div>
     </div>
   );
