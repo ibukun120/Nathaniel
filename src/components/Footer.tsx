@@ -44,7 +44,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="bg-gray-800 flex flex-col sm:flex-row items-center justify-between px-6 sm:px-12 lg:px-24 py-6 text-center sm:text-left">
         <h1 className="text-gray-400 text-sm sm:text-base mb-4 sm:mb-0">
-          © 2025 Bayo Adegbite. All rights reserved.
+          © 2026 Bayo Adegbite. All rights reserved.
         </h1>
 
         <ul className="flex gap-4 text-gray-500">
