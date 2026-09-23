@@ -1,26 +1,194 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root,
+html.light {
+  --background: #f5f1ea;
+  --foreground: #0b0b0c;
+  --paper: #f5f1ea;
+  --fg: #0b0b0c;
+  --nav: #ffffff;
+  --nav-scrolled: rgba(255, 255, 255, 0.9);
+  --grain-opacity: 0.05;
+  color-scheme: light;
+}
+
+html.dark {
+  --background: #0e0e10;
+  --foreground: #f3eee6;
+  --paper: #0e0e10;
+  --fg: #f3eee6;
+  --nav: #0e0e10;
+  --nav-scrolled: rgba(14, 14, 16, 0.9);
+  --grain-opacity: 0.07;
+  color-scheme: dark;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-fg: var(--fg);
+  --color-nav: var(--nav);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-robotoSlab);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --color-ink: #0b0b0c;
+  --color-ink-soft: #141416;
+  --color-gold: #d6b26a;
+  --color-gold-deep: #a9843f;
+
+  --ease-cinematic: cubic-bezier(0.19, 1, 0.22, 1);
+
+  --animate-drift: drift 22s ease-in-out infinite alternate;
+  --animate-drift-slow: drift 34s ease-in-out infinite alternate-reverse;
+  --animate-scroll-cue: scroll-cue 2.4s var(--ease-cinematic) infinite;
+  --animate-progress: progress 8s linear forwards;
+
+  @keyframes drift {
+    from { transform: translate3d(-4%, -3%, 0) scale(1); }
+    to { transform: translate3d(5%, 4%, 0) scale(1.12); }
+  }
+  @keyframes scroll-cue {
+    0% { transform: scaleY(0); transform-origin: top; }
+    45% { transform: scaleY(1); transform-origin: top; }
+    55% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+  @keyframes progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+}
+
+html {
+  overflow-x: clip;
+  scroll-padding-top: calc(4.5rem + env(safe-area-inset-top));
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: calc(5.5rem + env(safe-area-inset-top));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--fg);
+  overflow-x: clip;
+  font-family: var(--font-robotoSlab), Georgia, serif;
+  transition: background-color 0.45s var(--ease-cinematic), color 0.45s var(--ease-cinematic);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#music,
+#booking {
+  scroll-margin-top: calc(4.5rem + env(safe-area-inset-top));
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
+}
+
+/* ---------- Reveal guard ----------
+   An inline script adds .js to <html> before first paint, so elements GSAP will
+   reveal don't flash in their final state before hydration. Without JS, or with
+   reduced motion, content is always visible. The delayed animation is a safety
+   net in case scripts fail to load. */
+html.js [data-reveal] {
+  visibility: hidden;
+  animation: reveal-fallback 0s 4s forwards;
+}
+@keyframes reveal-fallback {
+  to { visibility: visible; }
+}
+
+[data-reveal-overlay] {
+  display: none;
+}
+html.motion-ready [data-reveal-overlay] {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal] {
+    visibility: visible;
+    animation: none;
+  }
+  html.motion-ready [data-reveal-overlay] {
+    display: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- Film grain ---------- */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Link underline (left → right in, exits to the right) ---------- */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.3em;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.6s var(--ease-cinematic);
+}
+.link-underline:hover::after,
+.link-underline:focus-visible::after,
+.link-underline[aria-current="page"]::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* Contextual cursor replaces the native one only where it has something to say. */
+html.has-cursor [data-cursor] {
+  cursor: none;
 }

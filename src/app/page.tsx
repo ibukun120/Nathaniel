@@ -1,21 +1,17 @@
-// import Footer from "@/components/Footer";
 import FrontSlide from "@/components/FrontSlide";
 import LatestAlbum from "@/components/LatestAlbum";
-// import NextEvent from "@/components/NextEvent";
 import SlidePic from "@/components/SlidePic";
 import SocialIconsRow1 from "@/components/SocialIconsRow";
 import Vid from "@/components/Vid";
-// import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="text-white bg-white flex flex-col">
-      <FrontSlide/>
-      <LatestAlbum/>
-      {/* <NextEvent/> */}
-      <Vid/>
-      <SlidePic/>
-      <SocialIconsRow1/>
+    <div className="flex flex-col bg-paper">
+      <FrontSlide />
+      <LatestAlbum />
+      <Vid />
+      <SlidePic />
+      <SocialIconsRow1 />
     </div>
   );
 }
