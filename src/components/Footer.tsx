@@ -41,10 +41,10 @@ const Footer = () => {
         <div data-reveal data-footer-col>
           <Link href="/" aria-label="Bayo Adegbite — Home" className="inline-block">
             <Image
-              src="/images/bayowhite.jpg"
+              src="/images/bayo-logo.png"
               alt="Bayo Adegbite"
-              width={809}
-              height={397}
+              width={690}
+              height={384}
               sizes="160px"
               className="h-12 w-auto invert md:h-14"
             />
