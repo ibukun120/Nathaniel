@@ -1,18 +1,10 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Geist, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Booking from "@/components/Booking";
 import Footer from "@/components/Footer";
-// import { Poppins } from "next/font/google";
-import { Roboto } from "next/font/google";
-// import { Open_Sans } from "next/font/google";
-import { Roboto_Slab } from "next/font/google";
-
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   weight: ["400", "600", "700"],
-//   variable: "--font-poppins",
-// });
+import MotionRoot from "@/components/motion/MotionRoot";
 
 const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
@@ -20,14 +12,8 @@ const robotoSlab = Roboto_Slab({
   weight: ["300", "400", "500", "700"], // choose what you need
 });
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -35,9 +21,19 @@ export const metadata: Metadata = {
   title: "Bayo Adegbite",
   description: "Music Minister",
   icons: {
-    icon: "/fav.jpg",                   
-    apple: "/fav.jpg",                  
+    icon: "/fav.jpg",
+    apple: "/fav.jpg",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f1ea" },
+    { media: "(prefers-color-scheme: dark)", color: "#0e0e10" },
+  ],
 };
 export default function RootLayout({
   children,
@@ -45,13 +41,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" id="top" suppressHydrationWarning>
+      <head>
+        {/* Lets CSS hide not-yet-revealed elements before first paint (see globals.css). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');var d=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);document.documentElement.classList.toggle('light',!d);document.documentElement.style.colorScheme=d?'dark':'light';}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body
-        className={`${robotoSlab.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${robotoSlab.className} ${robotoSlab.variable} ${geistSans.variable} grain antialiased`}
       >
         <Nav />
         {children}
+        <Booking />
         <Footer />
+        <MotionRoot />
       </body>
     </html>
   );

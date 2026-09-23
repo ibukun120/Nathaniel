@@ -1,114 +1,98 @@
 "use client";
+
+import { useRef } from "react";
 import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
 import { BsSpotify } from "react-icons/bs";
 import { FaDeezer } from "react-icons/fa";
+import { fadeUp, textReveal } from "@/lib/animation/presets";
+import { useRevealTimeline } from "@/hooks/useRevealTimeline";
+import { useStaggerReveal } from "@/hooks/useStaggerReveal";
+import SectionLabel from "@/components/motion/SectionLabel";
+import SplitWords from "@/components/motion/SplitWords";
+import { socialLinks } from "@/data/site";
+
+const platforms = [
+  { id: 1, link: socialLinks.twitter, label: "Twitter", icon: <Twitter size={20} /> },
+  { id: 2, link: socialLinks.instagram, label: "Instagram", icon: <Instagram size={20} /> },
+  { id: 3, link: socialLinks.spotify, label: "Spotify", icon: <BsSpotify size={20} /> },
+  { id: 4, link: socialLinks.deezer, label: "Deezer", icon: <FaDeezer size={20} /> },
+  { id: 5, link: socialLinks.youtube, label: "YouTube", icon: <Youtube size={20} /> },
+  { id: 6, link: socialLinks.facebook, label: "Facebook", icon: <Facebook size={20} /> },
+  {
+    id: 7,
+    link: socialLinks.boomplay,
+    label: "Boomplay",
+    src: "/images/social/Boomplay_Music_Logo.png",
+  },
+];
 
 const SocialIconsRow1 = () => {
-  const tailwindColors: Record<string, string> = {
-    "blue-300": "#93C5FD",
-    "pink-400": "#F472B6",
-    "green-600": "#16A34A",
-    "[#faeda5]": "#faeda5",
-    "red-800": "#991B1B",
-    "blue-700": "#1D4ED8",
-    black: "#626663",
-  };
+  const rootRef = useRef<HTMLElement>(null);
 
-  const icons = [
-    {
-      id: 1,
-      color: "blue-300",
-      link: "https://x.com/BayoAdegbite_",
-      label: "Twitter",
-      icon: <Twitter />,
-    },
-    {
-      id: 2,
-      color: "pink-400",
-      link: "https://www.instagram.com/bayo_adegbite/",
-      label: "Instagram",
-      icon: <Instagram />,
-    },
-    {
-      id: 3,
-      color: "green-600",
-      link: "https://open.spotify.com/artist/2CS52uC1sYdYmvtPSaJmFJ?si=No_vHlooS2-JwLJxUQVIKA",
-      label: "Spotify",
-      icon: <BsSpotify />,
-    },
-    {
-      id: 4,
-      color: "[#1e1f1c]",
-      link: "https://www.deezer.com/en/artist/11646073",
-      label: "Deezer",
-      icon: <FaDeezer />,
-      bg: "gray-400"
-      // src :"logo-sign-isolated-social-media.png"
-    },
-    {
-      id: 5,
-      color: "red-800",
-      link: "https://www.youtube.com/@bayo_adegbite_Tv/featured",
-      label: "Youtube",
-      icon: <Youtube />,
-    },
-    {
-      id: 6,
-      color: "blue-700",
-      link: "https://web.facebook.com/adegbite.bayo",
-      label: "Facebook",
-      icon: <Facebook />,
-    },
-    {
-      id: 7,
-      color: "black",
-      link: "https://www.boomplay.com/share/artist/242540",
-      label: "Boomplay",
-      src: "/images/social/Boomplay_Music_Logo.png",
-    },
-  ];
+  useRevealTimeline(rootRef, ({ tl, one }) => {
+    fadeUp(tl, one("[data-section-label]"), { duration: 0.7, distance: 16 });
+    textReveal(tl, one("[data-social-heading]"), {}, "<0.1");
+    fadeUp(tl, one("[data-social-copy]"), { duration: 0.75, distance: 18 }, "<0.2");
+  });
 
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  useStaggerReveal(rootRef, "[data-social-item]", { stagger: 0.06, distance: 22, start: "top 90%" });
 
   return (
-    <div className="grid grid-cols-3 md:flex justify-between items-center bg-black space-x-0 w-full md:h-40">
-      {icons.map((icon) => (
-        <div
-          key={icon.id}
-          className="relative flex flex-col items-center p-4 rounded-md w-20 h-32 justify-center"
-          onMouseEnter={() => setHoveredId(icon.id)}
-          onMouseLeave={() => setHoveredId(null)}
-        >
-          <div
-            className="flex items-center justify-center w-full h-full transition-transform duration-300 hover:-translate-y-2"
-            style={{ color: tailwindColors[icon.color] }}
-          >
-            {icon.icon ? (
-              <div className="w-full h-full flex justify-center items-center">
-                <Link href={icon.link} target="_blank" className="">{icon.icon}</Link>
-              </div>
-            ) : (
-              <Link href={icon.link} target="_blank"><Image
-                src={icon.src || ""}
-                alt={icon.label}
-                width={100}
-                height={100}
-                className="object-contain w-full h-full"
-              /></Link>
-            )}
-          </div>
+    <section ref={rootRef} aria-label="Listen and follow" className="relative overflow-hidden bg-ink text-white">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
+      />
 
-          {hoveredId === icon.id && (
-            <p className="absolute bottom-2 text-gray-100 text-sm">
-              {icon.label}
-            </p>
-          )}
+      <div className="mx-auto max-w-6xl px-5 py-16 md:px-16 md:py-24 lg:px-4">
+        <div className="max-w-xl">
+          <SectionLabel index="04" tone="dark">
+            Connect
+          </SectionLabel>
+          <h2
+            data-reveal
+            data-social-heading
+            className="mt-5 font-display text-[2.35rem] font-bold uppercase leading-[0.95] tracking-wide md:text-5xl"
+          >
+            <SplitWords text="Listen & Follow" />
+          </h2>
+          <p data-reveal data-social-copy className="mt-5 text-base font-light text-white/50 md:text-lg">
+            Stream the music and stay with the ministry.
+          </p>
         </div>
-      ))}
-    </div>
+
+        <ul className="mt-10 grid grid-cols-3 border-t border-white/10 sm:grid-cols-3 lg:grid-cols-7">
+          {platforms.map((platform) => (
+            <li key={platform.id} data-reveal data-social-item className="border-b border-white/10 last:col-span-3 sm:last:col-span-1 lg:border-b-0">
+              <a
+                href={platform.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-full min-h-[6.5rem] flex-col items-center justify-center gap-3 px-2 py-6 text-white/55 transition-colors duration-300 hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-gold sm:px-3 sm:py-10"
+              >
+                <span className="flex size-12 items-center justify-center rounded-full border border-white/12 transition duration-500 ease-cinematic group-hover:-translate-y-1 group-hover:border-gold/60">
+                  {platform.icon ? (
+                    platform.icon
+                  ) : (
+                    <Image
+                      src={platform.src || ""}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="h-5 w-auto object-contain brightness-0 invert opacity-80 transition-opacity duration-300 group-hover:opacity-100"
+                    />
+                  )}
+                </span>
+                <span className="font-sans text-[10px] font-medium uppercase tracking-[0.22em]">
+                  {platform.label}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 };
 
