@@ -160,7 +160,7 @@ const FrontSlide = () => {
                   playsInline
                   loop
                   preload="auto"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full origin-bottom scale-[1.16] object-cover md:scale-100"
                 />
               ) : (
                 <Image src={slide.src} alt="" fill sizes="100vw" className="object-cover" />
@@ -180,7 +180,7 @@ const FrontSlide = () => {
 
       <div
         data-hero-content
-        className="relative z-10 flex h-full flex-col justify-between px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-[calc(5.25rem+env(safe-area-inset-top))] md:px-12 md:pb-10 md:pt-28 lg:px-16"
+        className="relative z-10 flex h-full flex-col px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-[calc(6.75rem+env(safe-area-inset-top))] md:justify-between md:px-12 md:pb-10 md:pt-28 lg:px-16"
       >
         <div className="flex items-start justify-between gap-8">
           <div data-hero-rail data-reveal className="max-w-[16rem]">
@@ -199,20 +199,6 @@ const FrontSlide = () => {
                 →
               </span>
             </a>
-            <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-0 md:hidden">
-              {listenPlatforms.map((platform) => (
-                <li key={platform.name}>
-                  <a
-                    href={platform.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex min-h-9 items-center font-sans text-[11px] uppercase tracking-[0.16em] text-white/70"
-                  >
-                    {platform.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           <div data-hero-rail data-reveal className="hidden max-w-[13rem] text-right md:block">
@@ -246,7 +232,7 @@ const FrontSlide = () => {
         <h1
           data-hero-headline
           data-reveal
-          className="font-display font-bold uppercase leading-[0.88] tracking-tight"
+          className="mt-6 font-display font-bold uppercase leading-[0.88] tracking-tight md:mt-0"
         >
           <span className="flex flex-col gap-1 sm:hidden">
             <span className="text-[10.5vw] text-white">
@@ -273,7 +259,9 @@ const FrontSlide = () => {
           </span>
         </h1>
 
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <div aria-hidden className="flex-1 md:hidden" />
+
+        <div className="mt-auto flex flex-col gap-5 md:mt-0 md:flex-row md:items-end md:justify-between">
           <div className="max-w-md">
             <p data-hero-copy data-reveal className="text-[13px] font-light uppercase tracking-[0.12em] text-white/75 md:text-base md:tracking-[0.16em]">
               Get the latest update about my music and ministry

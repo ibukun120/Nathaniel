@@ -133,15 +133,13 @@ export default function Navbar() {
         <nav className="flex h-16 items-center justify-between px-5 md:h-20 md:px-6 lg:px-32" aria-label="Main">
           <Link href="/" data-nav-item aria-label="Bayo Adegbite — Home" className="block">
             <Image
-              src="/images/bayowhite.jpg"
+              src="/images/bayo-logo.png"
               alt="Bayo Adegbite"
-              width={809}
-              height={397}
+              width={690}
+              height={384}
               priority
               sizes="160px"
-              className={`h-12 w-auto md:h-14 ${
-                scrolled ? "mix-blend-multiply dark:mix-blend-normal dark:invert" : "invert mix-blend-screen"
-              }`}
+              className={`h-12 w-auto md:h-14 ${scrolled ? "dark:invert" : "invert"}`}
             />
           </Link>
 
