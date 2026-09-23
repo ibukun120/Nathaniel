@@ -20,7 +20,7 @@ const Vid = () => {
         <iframe
           width="760"
           height="415"
-          src="https://www.youtube.com/embed/k5345w3TzuI?si=yip8cs-GmJqxY1Aw"
+          src="https://www.youtube.com/embed/YGNlBuJq8Wg?si=oknQH_krVJD6nnlw"
           title="YouTube video player"
           className="border-0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -33,7 +33,7 @@ const Vid = () => {
         <iframe
           width="360"
           height="215"
-          src="https://www.youtube.com/embed/k5345w3TzuI?si=yip8cs-GmJqxY1Aw"
+          src="https://www.youtube.com/embed/YGNlBuJq8Wg?si=oknQH_krVJD6nnlw"
           title="YouTube video player"
           className="border-0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -46,3 +46,6 @@ const Vid = () => {
 };
 
 export default Vid;
+
+
+{/* <iframe width="560" height="315" src="https://www.youtube.com/embed/YGNlBuJq8Wg?si=oknQH_krVJD6nnlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
