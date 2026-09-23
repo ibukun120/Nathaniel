@@ -7,12 +7,12 @@ type Video = {
 };
 
 const videos: Video[] = [
-  { id: "Hxnnr-jA9IY?si=njT5UWll-gAWr06V", title: "Alaaye (Live)" },
-  { id: "yLBX-UHo1JM?si=X6vqH-wuHUyRRT-J", title: "Yeshua" },
-  { id: "jjmEtf00LkI?si=SOTFO6O_1wsqw3E6", title: "Akirisore (Live)" },
-  { id: "WwdeFAE4q_g?si=xs8lnjxmRPu09VA_", title: "Hallelujah Chant (Live)" },
-  { id: "jQOEfVhQhyI?si=eNgmu9AibKhcgmrL", title: "Aninilematannile (Live)" },
-  { id: "vjw7wCtgF18?si=YiZJhxd4eIa_dYQ4", title: "Kari Ogo Re (Live)" },
+  { id: "https://www.youtube.com/embed/k5345w3TzuI?si=9ccmDZuu68PHpv4f", title: "MEKODDISHKEM" },
+  { id: "https://www.youtube.com/embed/yLBX-UHo1JM?si=X6vqH-wuHUyRRT-J", title: "Yeshua" },
+  { id: "https://www.youtube.com/embed/jjmEtf00LkI?si=SOTFO6O_1wsqw3E6", title: "Akirisore (Live)" },
+  { id: "https://www.youtube.com/embed/WwdeFAE4q_g?si=xs8lnjxmRPu09VA_", title: "Hallelujah Chant (Live)" },
+  { id: "https://www.youtube.com/embed/jQOEfVhQhyI?si=eNgmu9AibKhcgmrL", title: "Aninilematannile (Live)" },
+  { id: "https://www.youtube.com/embed/vjw7wCtgF18?si=YiZJhxd4eIa_dYQ4", title: "Kari Ogo Re (Live)" },
 ];
 
 export default function YouTubeGrid() {
@@ -24,7 +24,7 @@ export default function YouTubeGrid() {
             {/* Video */}
             <div className="relative w-full aspect-video rounded overflow-hidden shadow-md">
               <iframe
-                src={`https://www.youtube.com/embed/${video.id}`}
+                src={video.id}
                 title={video.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -34,12 +34,13 @@ const page = () => {
           ></iframe>
         </div>
 
+        {/* sportify embed */}
         <div className="mt-4">
           <div>
             <iframe
               data-testid="embed-iframe"
               className="rounded-lg"
-              src="https://open.spotify.com/embed/track/1KknqXooD1WQDCij5tyw0u"
+              src="https://open.spotify.com/embed/track/5FyVtQrZDW6sDx1D5nRk2T?utm_source=generator&si=a0d52a876b4748e8"
               width="100%"
               height="352"
               style={{ border: 0 }}
@@ -49,6 +50,7 @@ const page = () => {
           </div>
         </div>
 
+        
         <div>
           <YouTubeGrid />
         </div>
